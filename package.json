@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "Criar um portal de notícias envolve várias etapas, desde a concepção até a implementação. Aqui estão algumas etapas e considerações que podem ajudar você a começar:",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",    
+    "start": "nodemon ./public/app.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.1.0",
+    "nodemon": "^3.0.3"
+  }
 }
