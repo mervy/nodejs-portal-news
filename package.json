@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-portal-news",
+  "version": "1.0.0",
+  "description": "Criar um portal de notícias envolve várias etapas, desde a concepção até a implementação. Aqui estão algumas etapas e considerações que podem ajudar você a começar:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
