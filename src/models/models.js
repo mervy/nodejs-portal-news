@@ -43,4 +43,4 @@ const Author = mongoose.model('Author', authorSchema)
 const Category = mongoose.model('Category', categorySchema)
 const News = mongoose.model('News', newsSchema)
 
-module.exports = { Author, Category, News }
+export { Author, Category, News }
