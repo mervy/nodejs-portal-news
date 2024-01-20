@@ -74,7 +74,7 @@ $ npm install mongoose dotenv
 Agora, você pode criar os schemas para os autores (authors), categorias (categories) e notícias (news). Crie um arquivo chamado `models.js`:
 
 ```javascript
-javascript// models.js
+// models.js
 const mongoose = require('mongoose');
 
 // Conectando ao MongoDB usando dotenv
@@ -123,13 +123,13 @@ module.exports = { Author, Category, News };
 Certifique-se de criar um arquivo `.env` na raiz do seu projeto com a URI do MongoDB Atlas:
 
 ```plaintext
-plaintextMONGODB_URI=seu_link_do_mongodb_atlas
+MONGODB_URI=seu_link_do_mongodb_atlas
 ```
 
 Agora, em seus outros arquivos, você pode importar os modelos onde precisar:
 
 ```javascript
-javascript// Seu arquivo que utiliza os modelos
+// Seu arquivo que utiliza os modelos
 const { Author, Category, News } = require('./models');
 
 // Agora você pode usar Author, Category e News para interagir com o MongoDB Atlas
@@ -144,7 +144,7 @@ Crie agora o form com ejs que na rota /login mostre o form para login da dashboa
 Para criar um formulário de login com EJS (Embedded JavaScript) em uma rota `/login`, você precisará seguir algumas etapas. Primeiro, certifique-se de ter o pacote `express` instalado:
 
 ```bash
-bashnpm install express ejs
+$ npm install express ejs
 ```
 
 Agora, crie um arquivo `app.js` para configurar o servidor Express:
