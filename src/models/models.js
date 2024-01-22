@@ -4,10 +4,18 @@ import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 dotenv.config()
 
+/*
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+} ,(err, db)=>{
+    if(err) throw err;
+    console.log(`Connect sucessfully in server: ${process.env.MONGODB_URI}`)
 })
+*/
+mongoose.connect(process.env.MONGODB_URI)
+ .then(() => console.log(`Connect sucessfully in server: ${process.env.MONGODB_URI}`))
+ .catch(err => console.log('Error connecting: ', err));
 
 //Schema for authors
 const authorSchema = new mongoose.Schema({
