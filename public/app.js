@@ -13,7 +13,7 @@ app.set('views', '../src/views')
 app.use(bodyParser.urlencoded({ extended: true }))
 
 //Route for login
-app.length('/login', (req, res) => {
+app.get('/login', (req, res) => {
     res.render('login')
 })
 
